@@ -4,7 +4,8 @@ using System.Text;
 
 namespace StorageSystem
 {
-    class QuantityUnit
+    public class QuantityUnit
     {
+        enum QuantityUnit { kg, piece, liter};
     }
 }
