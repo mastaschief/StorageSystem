@@ -4,12 +4,27 @@ using System.Text;
 
 namespace StorageSystem
 {
-    class Article
+    public class Article
     {
-        private int ArticleNumber;
-        private string ArticleDescription;
-        private decimal Price;
-        private decimal StorageQuantity;
-        private QuantityUnit QuantityUnit;
+        public int ArticleNumber { get; set;}
+        public string ArticleDescription { get; set; }
+        public decimal Price { get; set; }
+        public decimal StorageQuantity { get; set; }
+        public quantityUnit quantityUnit { get; set; }
+        public Article()
+        {
+
+        }
+        public Article(int articleNumber, string articleDescription, quantityUnit QuantityUnit, decimal price)
+        {
+            this.ArticleNumber = articleNumber;
+            this.ArticleDescription = articleDescription;
+            this.Price = price;
+            this.quantityUnit = QuantityUnit;
+        }
+        public override string ToString()
+        {
+            return base.ToString(); 
+        }
     }
 }
